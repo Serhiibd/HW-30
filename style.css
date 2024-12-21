@@ -1,0 +1,29 @@
+@keyframes cubeAnimate {
+  0%,
+  100% {
+    background-color: red;
+    transform: translate(0, 0);
+  }
+
+  25% {
+    background-color: blue;
+    transform: translate(0, 550px);
+  }
+
+  50% {
+    background-color: green;
+    transform: translate(550px, 550px);
+  }
+
+  75% {
+    background-color: yellow;
+    transform: translate(550px, 0);
+  }
+}
+
+.cube {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  animation: cubeAnimate 5s ease-in-out infinite;
+}
